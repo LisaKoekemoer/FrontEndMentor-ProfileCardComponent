@@ -1,38 +1,96 @@
+
 .App {
-  text-align: center;
+    background-color: #19A1AE;
+    width: 1440px;
+    height: 720px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topPattern {
+    position: relative;
+    top: -500px;
+    left: -500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bottomPattern {
+    position: relative;
+    top: -1200px;
+    right: -800px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile-card-component {
+    position: relative;
+    top: -1000px;
+    width: 350px;
+    height: 374px;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: #FFFFFF;
+    border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.pattern {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.avatar {
+    position: relative;
+    top: -50px;
+    left: 120px;
+    width: 96px;
+    height: 96px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -55px;
+}
+
+.profile-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E3349;
+}
+
+.profile-details p {
+   font-size: 18px;
+   color: #6B7082; 
+   margin-left: 10px;
+}
+
+.area {
+    text-align: center;
+    margin-top: -10px;
+    font-size: 14px;
+    color: #6B7082;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: auto;
+}
+
+.account h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2E3349;
+    margin-top: 35px;
+}
+
+.account p {
+    font-size: 10px;
+    color: #6B7082;
+    margin-top: -12px;
+}
+
+@media screen and (max-width:414px) {
+    .profile-card-component {
+        margin-top: 15vh; 
+    }
 }
